@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "weight_policy": {
+    "version": 1,
+    "basis": "business_priority",
+    "core_min_share": 0.5
+  },
+  "gate_tests": [
+    "test_outputs.py::test_main_transit_gate"
+  ],
+  "tests": {
+    "test_outputs.py::test_target_mapping_matches_golden": {
+      "priority": "core",
+      "weight": 0.095,
+      "rationale": "核心仿射时钟、稀疏凌日、周期或全局支持直接决定恢复结果能否发布。"
+    },
+    "test_outputs.py::test_affine_clock_rate_and_offset_are_recovered": {
+      "priority": "core",
+      "weight": 0.095,
+      "rationale": "核心仿射时钟、稀疏凌日、周期或全局支持直接决定恢复结果能否发布。"
+    },
+    "test_outputs.py::test_sparse_transit_counts_are_recovered": {
+      "priority": "core",
+      "weight": 0.095,
+      "rationale": "核心仿射时钟、稀疏凌日、周期或全局支持直接决定恢复结果能否发布。"
+    },
+    "test_outputs.py::test_transit_centers_are_globally_aligned": {
+      "priority": "core",
+      "weight": 0.095,
+      "rationale": "核心仿射时钟、稀疏凌日、周期或全局支持直接决定恢复结果能否发布。"
+    },
+    "test_outputs.py::test_periods_match_repeat_event_lattice": {
+      "priority": "core",
+      "weight": 0.095,
+      "rationale": "核心仿射时钟、稀疏凌日、周期或全局支持直接决定恢复结果能否发布。"
+    },
+    "test_outputs.py::test_global_support_is_unique": {
+      "priority": "core",
+      "weight": 0.095,
+      "rationale": "核心仿射时钟、稀疏凌日、周期或全局支持直接决定恢复结果能否发布。"
+    },
+    "test_outputs.py::test_success_channels_are_empty": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_report_top_schema_is_exact": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_catalog_row_schema_is_exact": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_catalog_sorted_and_calibrated": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_epochs_are_in_canonical_phase": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_depths_and_durations_match_events_or_logs": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_support_ranking_uses_history_and_current_points": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_history_schema_and_count_are_exact": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_same_input_keeps_history_bytes": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_changed_input_appends_five_rows": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_failed_input_preserves_history_bytes": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_history_fingerprint_is_raw_sha256": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_report_and_history_compact_newlines": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_run_finishes_below_public_limit": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_exact_five_curves_are_required": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_duplicate_curve_code_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_missing_target_key_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.018,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_extra_target_key_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.018,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_duplicate_json_key_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.018,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_boolean_schema_version_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.018,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_nonfinite_flux_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.018,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_curve_shape_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.018,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    },
+    "test_outputs.py::test_input_error_protocol_is_closed": {
+      "priority": "supporting",
+      "weight": 0.018,
+      "rationale": "支撑精确 schema、历史状态、失败恢复或序列化，防止恢复结果被污染。"
+    }
+  }
+}
